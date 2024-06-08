@@ -1,0 +1,25 @@
+{
+  "assistanteDermatologueApp": {
+    "imageStade": {
+      "home": {
+        "title": "Image Stades",
+        "refreshListLabel": "Refresh list",
+        "createLabel": "Create a new Image Stade",
+        "createOrEditLabel": "Create or edit a Image Stade",
+        "notFound": "No Image Stades found"
+      },
+      "created": "A new Image Stade is created with identifier {{ param }}",
+      "updated": "A Image Stade is updated with identifier {{ param }}",
+      "deleted": "A Image Stade is deleted with identifier {{ param }}",
+      "delete": {
+        "question": "Are you sure you want to delete Image Stade {{ id }}?"
+      },
+      "detail": {
+        "title": "Image Stade"
+      },
+      "id": "ID",
+      "picture": "Picture",
+      "composition": "Composition"
+    }
+  }
+}

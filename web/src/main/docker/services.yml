@@ -1,0 +1,8 @@
+# This configuration is intended for development purpose, it's **your** responsibility to harden it for production
+#name: assistante-dermatologue
+version: '3.3'
+services:
+  mongodb:
+    extends:
+      file: ./mongodb.yml
+      service: mongodb

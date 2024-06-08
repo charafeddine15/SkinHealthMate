@@ -1,0 +1,31 @@
+{
+  "applications": "*",
+  "changelogDate": "20231105013453",
+  "entityTableName": "user",
+  "fields": [],
+  "name": "User",
+  "relationships": [
+    {
+      "otherEntityName": "patient",
+      "otherEntityRelationshipName": "user",
+      "relationshipName": "patient",
+      "relationshipSide": "right",
+      "relationshipType": "one-to-one"
+    },
+    {
+      "otherEntityName": "dermatologue",
+      "otherEntityRelationshipName": "user",
+      "relationshipName": "dermatologue",
+      "relationshipSide": "right",
+      "relationshipType": "one-to-one"
+    },
+    {
+      "otherEntityName": "secretaire",
+      "otherEntityRelationshipName": "user",
+      "relationshipName": "secretaire",
+      "relationshipSide": "right",
+      "relationshipType": "one-to-one"
+    }
+  ],
+  "searchEngine": "no"
+}

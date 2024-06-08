@@ -1,0 +1,36 @@
+{
+  "expo": {
+    "name": "Skin Health",
+    "slug": "drawer-navigation",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "userInterfaceStyle": "light",
+    "splash": {
+      "image": "./assets/splash.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#ffffff"
+    },
+    "assetBundlePatterns": [
+      "**/*"
+    ],
+    "ios": {
+      "supportsTablet": true
+    },
+    "android": {
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/medical.png",
+        "backgroundColor": "#ffffff"
+      },
+      "package": "com.elahja.drawernavigation"
+    },
+    "web": {
+      "favicon": "./assets/dermatology.png"
+    },
+    "extra": {
+      "eas": {
+        "projectId": "296cb749-d101-41c1-8d4d-d248f849a9ca"
+      }
+    }
+  }
+}

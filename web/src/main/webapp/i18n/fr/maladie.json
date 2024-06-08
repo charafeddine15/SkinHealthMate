@@ -1,0 +1,27 @@
+{
+  "assistanteDermatologueApp": {
+    "maladie": {
+      "home": {
+        "title": "Maladies",
+        "refreshListLabel": "Actualiser la liste",
+        "createLabel": "Créer un nouveau Maladie",
+        "createOrEditLabel": "Créer ou éditer un Maladie",
+        "notFound": "Aucun Maladie trouvé"
+      },
+      "created": "Un nouveau Maladie a été créé avec l'identifiant {{ param }}",
+      "updated": "Le Maladie avec l'identifiant {{ param }} a été mis à jour",
+      "deleted": "Le Maladie avec l'identifiant {{ param }} a été supprimé",
+      "delete": {
+        "question": "Êtes-vous certain de vouloir supprimer le Maladie {{ id }} ?"
+      },
+      "detail": {
+        "title": "Maladie"
+      },
+      "id": "ID",
+      "fullName": "Full Name",
+      "abbr": "Abbr",
+      "stade": "Stade",
+      "diagnostics": "Diagnostics"
+    }
+  }
+}

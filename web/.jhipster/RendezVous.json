@@ -1,0 +1,44 @@
+{
+  "applications": "*",
+  "changelogDate": "20231105013853",
+  "entityTableName": "rendez_vous",
+  "fields": [
+    {
+      "fieldName": "dateDebut",
+      "fieldType": "Instant"
+    },
+    {
+      "fieldName": "dateFin",
+      "fieldType": "Instant"
+    },
+    {
+      "fieldName": "statut",
+      "fieldType": "Boolean"
+    }
+  ],
+  "name": "RendezVous",
+  "relationships": [
+    {
+      "otherEntityName": "dermatologue",
+      "otherEntityRelationshipName": "dermatologuePatients",
+      "relationshipName": "dermatologues",
+      "relationshipSide": "left",
+      "relationshipType": "many-to-one"
+    },
+    {
+      "otherEntityName": "patient",
+      "otherEntityRelationshipName": "dermatologuePatients",
+      "relationshipName": "patients",
+      "relationshipSide": "left",
+      "relationshipType": "many-to-one"
+    },
+    {
+      "otherEntityName": "consultation",
+      "otherEntityRelationshipName": "rendezVous",
+      "relationshipName": "consultation",
+      "relationshipSide": "right",
+      "relationshipType": "one-to-many"
+    }
+  ],
+  "searchEngine": "no"
+}

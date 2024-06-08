@@ -1,0 +1,87 @@
+entity User{
+
+}
+entity Dermatologue {
+  codeEmp String
+  genre String
+  telephone String
+}
+
+entity Patient {
+  birthdate Instant
+  adress String
+  genre String
+  telephone String
+}
+entity Secretaire {
+  codeEmp String
+  genre String
+  telephone String
+}
+
+entity RendezVous {
+  dateDebut Instant
+  dateFin Instant
+  statut Boolean
+}
+entity Consultation {
+	dateConsultation Instant
+}
+entity Diagnostic{
+	dateDiagnostic Instant
+    picture ImageBlob
+    description String
+    prescription String
+    probability Float
+    
+}
+entity Maladie{
+	fullName String
+    abbr String
+}
+
+entity Stade{
+	stade String
+    description String
+}
+
+entity ImageStade {
+	picture ImageBlob
+}
+
+entity Symptoms{
+	nom String
+}
+
+
+relationship OneToOne {
+  Patient{user} to User{patient}
+  Dermatologue{user} to User{dermatologue}
+  Secretaire{user} to User{secretaire}
+}
+
+relationship ManyToOne {
+  RendezVous{dermatologues} to Dermatologue{dermatologuePatients}
+  RendezVous{patients} to Patient{dermatologuePatients}
+}
+
+relationship ManyToOne {
+  Consultation{rendezVous} to RendezVous{consultation}
+}
+
+
+relationship ManyToOne {
+  Diagnostic{consultations} to Consultation{diagnostic}
+}
+
+relationship ManyToOne {
+  Maladie{diagnostics} to Diagnostic{maladie}
+}
+
+relationship OneToMany {
+	Maladie to Stade{composition}
+}
+
+relationship OneToMany {
+	Stade to ImageStade{composition}
+}

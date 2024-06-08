@@ -1,0 +1,35 @@
+# This configuration is intended for development purpose, it's **your** responsibility to harden it for production
+# name: assistante-dermatologue
+version: '3.3'
+services:
+  app:
+    image: elbahjacharafeddine/assistante-dermatologue
+    environment:
+      - _JAVA_OPTIONS=-Xmx512m -Xms256m
+      - SPRING_PROFILES_ACTIVE=prod,api-docs
+      - MANAGEMENT_PROMETHEUS_METRICS_EXPORT_ENABLED=true
+      - SPRING_DATA_MONGODB_URI=mongodb://mongodb:27017/assistante-dermatologue
+    #      - SPRING_DATA_MONGODB_URI=mongodb+srv://elbahjaabdelhakim2020:MvviE9JentSx2OIW@cluster0.jw1kz28.mongodb.net/assistante-dermatologue
+    ports:
+      - 127.0.0.1:8080:8080
+    healthcheck:
+      test:
+        - CMD
+        - curl
+        - -f
+        - http://localhost:8080/management/health
+      interval: 5s
+      timeout: 5s
+      retries: 40
+    depends_on:
+      mongodb:
+        condition: service_healthy
+  mongodb:
+    extends:
+      file: ./mongodb.yml
+      service: mongodb
+
+  flask:
+    image: elbahjacharafeddine/myflaskapp
+    ports:
+      - 5000:5000

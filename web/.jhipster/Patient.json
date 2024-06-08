@@ -1,0 +1,41 @@
+{
+  "applications": "*",
+  "changelogDate": "20231105013653",
+  "entityTableName": "patient",
+  "fields": [
+    {
+      "fieldName": "birthdate",
+      "fieldType": "Instant"
+    },
+    {
+      "fieldName": "adress",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "genre",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "telephone",
+      "fieldType": "String"
+    }
+  ],
+  "name": "Patient",
+  "relationships": [
+    {
+      "otherEntityName": "user",
+      "otherEntityRelationshipName": "patient",
+      "relationshipName": "user",
+      "relationshipSide": "left",
+      "relationshipType": "one-to-one"
+    },
+    {
+      "otherEntityName": "rendezVous",
+      "otherEntityRelationshipName": "patients",
+      "relationshipName": "dermatologuePatients",
+      "relationshipSide": "right",
+      "relationshipType": "one-to-many"
+    }
+  ],
+  "searchEngine": "no"
+}

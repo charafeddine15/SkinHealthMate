@@ -1,0 +1,28 @@
+{
+  "assistanteDermatologueApp": {
+    "dermatologue": {
+      "home": {
+        "title": "Dermatologues",
+        "refreshListLabel": "Refresh list",
+        "createLabel": "Create a new Dermatologue",
+        "createOrEditLabel": "Create or edit a Dermatologue",
+        "notFound": "No Dermatologues found"
+      },
+      "created": "A new Dermatologue is created with identifier {{ param }}",
+      "updated": "A Dermatologue is updated with identifier {{ param }}",
+      "deleted": "A Dermatologue is deleted with identifier {{ param }}",
+      "delete": {
+        "question": "Are you sure you want to delete Dermatologue {{ id }}?"
+      },
+      "detail": {
+        "title": "Dermatologue"
+      },
+      "id": "ID",
+      "codeEmp": "Code Emp",
+      "genre": "Genre",
+      "telephone": "Telephone",
+      "user": "User",
+      "dermatologuePatients": "Dermatologue Patients"
+    }
+  }
+}

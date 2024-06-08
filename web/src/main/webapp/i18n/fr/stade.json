@@ -1,0 +1,27 @@
+{
+  "assistanteDermatologueApp": {
+    "stade": {
+      "home": {
+        "title": "Stades",
+        "refreshListLabel": "Actualiser la liste",
+        "createLabel": "Créer un nouveau Stade",
+        "createOrEditLabel": "Créer ou éditer un Stade",
+        "notFound": "Aucun Stade trouvé"
+      },
+      "created": "Un nouveau Stade a été créé avec l'identifiant {{ param }}",
+      "updated": "Le Stade avec l'identifiant {{ param }} a été mis à jour",
+      "deleted": "Le Stade avec l'identifiant {{ param }} a été supprimé",
+      "delete": {
+        "question": "Êtes-vous certain de vouloir supprimer le Stade {{ id }} ?"
+      },
+      "detail": {
+        "title": "Stade"
+      },
+      "id": "ID",
+      "stade": "Stade",
+      "description": "Description",
+      "imageStade": "Image Stade",
+      "composition": "Composition"
+    }
+  }
+}

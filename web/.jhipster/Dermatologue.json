@@ -1,0 +1,37 @@
+{
+  "applications": "*",
+  "changelogDate": "20231105013553",
+  "entityTableName": "dermatologue",
+  "fields": [
+    {
+      "fieldName": "codeEmp",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "genre",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "telephone",
+      "fieldType": "String"
+    }
+  ],
+  "name": "Dermatologue",
+  "relationships": [
+    {
+      "otherEntityName": "user",
+      "otherEntityRelationshipName": "dermatologue",
+      "relationshipName": "user",
+      "relationshipSide": "left",
+      "relationshipType": "one-to-one"
+    },
+    {
+      "otherEntityName": "rendezVous",
+      "otherEntityRelationshipName": "dermatologues",
+      "relationshipName": "dermatologuePatients",
+      "relationshipSide": "right",
+      "relationshipType": "one-to-many"
+    }
+  ],
+  "searchEngine": "no"
+}

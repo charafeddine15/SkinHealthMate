@@ -1,0 +1,32 @@
+{
+  "applications": "*",
+  "changelogDate": "20231105014253",
+  "entityTableName": "stade",
+  "fields": [
+    {
+      "fieldName": "stade",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "description",
+      "fieldType": "String"
+    }
+  ],
+  "name": "Stade",
+  "relationships": [
+    {
+      "otherEntityName": "imageStade",
+      "otherEntityRelationshipName": "composition",
+      "relationshipName": "imageStade",
+      "relationshipSide": "left",
+      "relationshipType": "one-to-many"
+    },
+    {
+      "otherEntityName": "maladie",
+      "relationshipName": "composition",
+      "relationshipSide": "right",
+      "relationshipType": "many-to-one"
+    }
+  ],
+  "searchEngine": "no"
+}

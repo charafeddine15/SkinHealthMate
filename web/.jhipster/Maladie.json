@@ -1,0 +1,33 @@
+{
+  "applications": "*",
+  "changelogDate": "20231105014153",
+  "entityTableName": "maladie",
+  "fields": [
+    {
+      "fieldName": "fullName",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "abbr",
+      "fieldType": "String"
+    }
+  ],
+  "name": "Maladie",
+  "relationships": [
+    {
+      "otherEntityName": "stade",
+      "otherEntityRelationshipName": "composition",
+      "relationshipName": "stade",
+      "relationshipSide": "left",
+      "relationshipType": "one-to-many"
+    },
+    {
+      "otherEntityName": "diagnostic",
+      "otherEntityRelationshipName": "maladie",
+      "relationshipName": "diagnostics",
+      "relationshipSide": "left",
+      "relationshipType": "many-to-one"
+    }
+  ],
+  "searchEngine": "no"
+}

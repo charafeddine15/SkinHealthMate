@@ -1,0 +1,30 @@
+{
+  "assistanteDermatologueApp": {
+    "diagnostic": {
+      "home": {
+        "title": "Diagnostics",
+        "refreshListLabel": "Actualiser la liste",
+        "createLabel": "Créer un nouveau Diagnostic",
+        "createOrEditLabel": "Créer ou éditer un Diagnostic",
+        "notFound": "Aucun Diagnostic trouvé"
+      },
+      "created": "Un nouveau Diagnostic a été créé avec l'identifiant {{ param }}",
+      "updated": "Le Diagnostic avec l'identifiant {{ param }} a été mis à jour",
+      "deleted": "Le Diagnostic avec l'identifiant {{ param }} a été supprimé",
+      "delete": {
+        "question": "Êtes-vous certain de vouloir supprimer le Diagnostic {{ id }} ?"
+      },
+      "detail": {
+        "title": "Diagnostic"
+      },
+      "id": "ID",
+      "dateDiagnostic": "Date Diagnostic",
+      "picture": "Picture",
+      "description": "Description",
+      "prescription": "Prescription",
+      "probability": "Probability",
+      "consultations": "Consultations",
+      "maladie": "Maladie"
+    }
+  }
+}

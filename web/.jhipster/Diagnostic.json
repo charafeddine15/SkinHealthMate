@@ -1,0 +1,46 @@
+{
+  "applications": "*",
+  "changelogDate": "20231105014053",
+  "entityTableName": "diagnostic",
+  "fields": [
+    {
+      "fieldName": "dateDiagnostic",
+      "fieldType": "Instant"
+    },
+    {
+      "fieldName": "picture",
+      "fieldType": "byte[]",
+      "fieldTypeBlobContent": "image"
+    },
+    {
+      "fieldName": "description",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "prescription",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "probability",
+      "fieldType": "Float"
+    }
+  ],
+  "name": "Diagnostic",
+  "relationships": [
+    {
+      "otherEntityName": "consultation",
+      "otherEntityRelationshipName": "diagnostic",
+      "relationshipName": "consultations",
+      "relationshipSide": "left",
+      "relationshipType": "many-to-one"
+    },
+    {
+      "otherEntityName": "maladie",
+      "otherEntityRelationshipName": "diagnostics",
+      "relationshipName": "maladie",
+      "relationshipSide": "right",
+      "relationshipType": "one-to-many"
+    }
+  ],
+  "searchEngine": "no"
+}

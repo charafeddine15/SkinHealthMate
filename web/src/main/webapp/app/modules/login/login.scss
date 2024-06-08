@@ -1,0 +1,47 @@
+// /* ==========================================================================
+// Main page styles
+// ========================================================================== */
+// .hipster {
+//   // display: inline-block;
+//   display: flex;
+//   justify-content: center;
+//   align-items: center;
+//   width: 100%;
+//   height: 675px;
+//   // width: 100%;
+//   max-width: 100%;
+//   max-height: 100%;
+//   // height: auto;
+//   background: url('/content/images/background.jpg') no-repeat center;
+//   background-size: cover;
+//   margin: 0;
+//   padding: 0;
+// }
+// .home {
+//   height: 677px; /* 100% of viewport height */
+//   width: 100vw; /* 100% of viewport width */
+//   background-size: cover;
+//   overflow: hidden;
+// }
+
+.home {
+  position: relative;
+  height: 677px;
+  width: 100vw;
+  overflow: hidden;
+
+  .background-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    filter: blur(2px);
+  }
+
+  .login-card {
+    position: relative;
+    z-index: 2;
+  }
+}

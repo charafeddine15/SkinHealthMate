@@ -1,0 +1,29 @@
+{
+  "applications": "*",
+  "changelogDate": "20231105013953",
+  "entityTableName": "consultation",
+  "fields": [
+    {
+      "fieldName": "dateConsultation",
+      "fieldType": "Instant"
+    }
+  ],
+  "name": "Consultation",
+  "relationships": [
+    {
+      "otherEntityName": "rendezVous",
+      "otherEntityRelationshipName": "consultation",
+      "relationshipName": "rendezVous",
+      "relationshipSide": "left",
+      "relationshipType": "many-to-one"
+    },
+    {
+      "otherEntityName": "diagnostic",
+      "otherEntityRelationshipName": "consultations",
+      "relationshipName": "diagnostic",
+      "relationshipSide": "right",
+      "relationshipType": "one-to-many"
+    }
+  ],
+  "searchEngine": "no"
+}

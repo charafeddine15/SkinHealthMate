@@ -1,0 +1,24 @@
+{
+  "assistanteDermatologueApp": {
+    "symptoms": {
+      "home": {
+        "title": "Symptoms",
+        "refreshListLabel": "Refresh list",
+        "createLabel": "Create a new Symptoms",
+        "createOrEditLabel": "Create or edit a Symptoms",
+        "notFound": "No Symptoms found"
+      },
+      "created": "A new Symptoms is created with identifier {{ param }}",
+      "updated": "A Symptoms is updated with identifier {{ param }}",
+      "deleted": "A Symptoms is deleted with identifier {{ param }}",
+      "delete": {
+        "question": "Are you sure you want to delete Symptoms {{ id }}?"
+      },
+      "detail": {
+        "title": "Symptoms"
+      },
+      "id": "ID",
+      "nom": "Nom"
+    }
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "applications": "*",
+  "changelogDate": "20231105014353",
+  "entityTableName": "image_stade",
+  "fields": [
+    {
+      "fieldName": "picture",
+      "fieldType": "byte[]",
+      "fieldTypeBlobContent": "image"
+    }
+  ],
+  "name": "ImageStade",
+  "relationships": [
+    {
+      "otherEntityName": "stade",
+      "relationshipName": "composition",
+      "relationshipSide": "right",
+      "relationshipType": "many-to-one"
+    }
+  ],
+  "searchEngine": "no"
+}

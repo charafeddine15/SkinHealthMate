@@ -1,0 +1,29 @@
+{
+  "assistanteDermatologueApp": {
+    "rendezVous": {
+      "home": {
+        "title": "RendezVous",
+        "refreshListLabel": "Actualiser la liste",
+        "createLabel": "Créer un nouveau Rendez Vous",
+        "createOrEditLabel": "Créer ou éditer un Rendez Vous",
+        "notFound": "Aucun Rendez Vous trouvé"
+      },
+      "created": "Un nouveau Rendez Vous a été créé avec l'identifiant {{ param }}",
+      "updated": "Le Rendez Vous avec l'identifiant {{ param }} a été mis à jour",
+      "deleted": "Le Rendez Vous avec l'identifiant {{ param }} a été supprimé",
+      "delete": {
+        "question": "Êtes-vous certain de vouloir supprimer le Rendez Vous {{ id }} ?"
+      },
+      "detail": {
+        "title": "Rendez Vous"
+      },
+      "id": "ID",
+      "dateDebut": "Date Debut",
+      "dateFin": "Date Fin",
+      "statut": "Statut",
+      "dermatologues": "Dermatologues",
+      "patients": "Patients",
+      "consultation": "Consultation"
+    }
+  }
+}
